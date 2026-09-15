@@ -27,7 +27,7 @@ app.get("/health", (_req, res) => {
   res.json({
     data: {
       status: "ok",
-      service: "forgeflow-api",
+      service: "sangai-api",
       timestamp: new Date().toISOString(),
     },
   });
@@ -43,5 +43,5 @@ app.use((_req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`ForgeFlow API running on http://localhost:${PORT}`);
+  console.log(`Sangai API running on http://localhost:${PORT}`);
 });

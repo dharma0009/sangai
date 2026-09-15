@@ -1,12 +1,12 @@
 services:
   postgres:
     image: postgres:16
-    container_name: forgeflow-postgres
+    container_name: sangai-postgres
     restart: unless-stopped
     environment:
-      POSTGRES_USER: forgeflow
-      POSTGRES_PASSWORD: forgeflow
-      POSTGRES_DB: forgeflow
+      POSTGRES_USER: sangai
+      POSTGRES_PASSWORD: sangai
+      POSTGRES_DB: sangai
     ports:
       - "5432:5432"
     volumes:
@@ -14,7 +14,7 @@ services:
 
   redis:
     image: redis:7-alpine
-    container_name: forgeflow-redis
+    container_name: sangai-redis
     restart: unless-stopped
     ports:
       - "6379:6379"
